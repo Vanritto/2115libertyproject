@@ -123,6 +123,7 @@ input:hover{
   padding-right: 15%;
   overflow: hidden;
   line-height: 150%;
+  font-family: 'Ubuntu', sans-serif; 
 }
 .tabs img {
   /* margin-left: 5%;
@@ -141,7 +142,8 @@ input:hover{
 }
 
 .content h5 {
-  font-size: large;
+  font-size: 20px;
+  font-family: sans-serif;
 }
 .tabs .content section {
   display: none;
@@ -366,7 +368,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Lato", sans-serif; */
+  /* font-family: sans-serif; */
   font-family: 'Ubuntu', sans-serif;
 
   font-weight: 400;
@@ -382,6 +384,7 @@ h3 {
 
 h2,
 h5 {
+  /* font-family: "Lato", sans-serif;  */
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -409,6 +412,8 @@ h4 {
 
 /* Main headings on every Page */
 h1 {
+  font-family: sans-serif;
+    /* font-family: "Lato", sans-serif; */
   color: #fff;
   font-size: 19px;
   background-color: #88abc6;
@@ -519,6 +524,7 @@ h1 {
 
 .headertext {
   position: absolute;
+  font-family: sans-serif;
   top: 135px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -971,20 +977,23 @@ h4 {
 }*/
 
 .content5 h1 {
+  font-family: sans-serif;
   text-align: center;
   /* width: 100%; */
   /* padding: 2%; */
   margin-bottom: 5%;
   margin-top: 0%;
+  font-size: 18px;
 }
 .content5 h4 {
+ 
   text-align: left;
 }
 .content5 p {
   /* margin-left: 3%; */
   padding-right: 1%;
   /* height: auto; */
-  font-size: larg;
+  /* font-size: larg; */
   line-height: 1.6;
   padding-top: 1%;
 }
@@ -1280,6 +1289,7 @@ h4 {
 .content3 {
   padding: 2px;
   background-color: #88abc6;
+
   margin-left: 21%;
   margin-right: 24%;
   margin-top: 2%;
@@ -1291,6 +1301,7 @@ h4 {
   padding-top: 4px;
   padding-left: 12px;
   padding-right: 12px;
+  font-family: 'Ubuntu', sans-serif; 
   /* font-size: large; */
   color: white;
   line-height: 1.4;
@@ -1302,6 +1313,7 @@ h4 {
 /* BUTTON INFO FOR START PAGE https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h*/
 .button {
   width: 300px;
+  
 }
 
 /* Style inputs, select elements and textareas */
@@ -1489,10 +1501,10 @@ input[type="submit"] {
   overflow: hidden;
   text-align: left;
   line-height: 150%;
-}
+}*
 .content2s h1 {
   margin-bottom: 5%;
-}
+} 
 .content2s h2 {
   text-align: center;
   margin-bottom: 2%;
