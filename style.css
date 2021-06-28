@@ -829,13 +829,6 @@ h1 {
 
 }
 
-.column h6 {
-  color: #58595c;
-  /* padding-bottom: 1vw; */
-  padding-top: 1vw;
-
-  font-size: medium;
-}
 .overlay {
   position: absolute;
   bottom: 100%;
@@ -999,11 +992,13 @@ h1 {
 .mainproject {
   display: grid;
   grid-template-columns: auto;
+  
 }
 .content5 {
   /* margin: 2%; */
   /* margin-left: 5%; */
   padding: 0;
+  margin-top: 10px;
   /* padding-bottom: 3%; */
   overflow: hidden;
   text-align: left;
@@ -1028,7 +1023,7 @@ h1 {
   /* width: 100%; */
   /* padding: 2%; */
   margin-bottom: 4%;
-  margin-top: 0%;
+  margin-top: 0px;
   font-size: 18px;
 }
 .content5 h4 {
