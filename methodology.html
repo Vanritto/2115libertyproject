@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>VANRITTO</title>
+    <!-- Link to the CSS Style sheet -->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Link to the JavaScript sheet -->
+    <script src="vanritto.js"></script>
+  </head>
+  <body>
+	<!--navbar-->
+  <div class="navbar">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" id="home">HOME</a>
+            <div class="dropdown">
+        <button class="dropbtn">PROJECT  <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+                      <a href="project.html"><i class="fa fa-th"></i>	PROJECT</a>
+          <a href="methodology.html"><i class='fas fa-database'></i>	METHODOLOGY</a>
+          <a href="solution.html"><i class="fa fa-check"></i>	SOLUTION</a>
+      </div>
+      </div> 
+      <a href="aboutus.html"><i class="fa fa-user"></i> ABOUT US</a>
+      <a href="contact.html"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <!--End Navbar-->
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="images/logobanner.png" alt="Logobanner" height="100%" />
+    </div>
+    <div id="headertitle">
+      <span class="headertext">
+        <!-- RIDE 4 FREEDOM <br /> -->
+        METHODOLOGY</span
+      >
+    </div>
+
+<div class="tabs">
+  
+  <input type="radio" id="tab1" name="tab-control" checked>
+  <input type="radio" id="tab2" name="tab-control">
+  <input type="radio" id="tab3" name="tab-control">  
+  <input type="radio" id="tab4" name="tab-control">
+  <ul>
+    <li title="Overview"><label for="tab1" role="button"><i class="fas fa-cog   "></i> OVERVIEW</label></li>
+    <li title="Database Development"><label for="tab2" role="button"><i class="fas fa-database"></i> DATABASE</label></li>
+    <li title="event webpage"><label for="tab3" role="button"><i class="fa fa-globe" aria-hidden="true"></i> WEBPAGE</label></li>    
+    <li title="Web map"><label for="tab4" role="button"><i class="fa fa-map" aria-hidden="true"></i>  WEB MAP</label></li>
+  </ul> 
+  <!--   -->
+  <div class="slider"><div class="indicator"></div></div>
+  <div class="content">
+    <section>
+    
+  
+        <h5>WORKFLOW</h5>
+          <div>
+  
+          <p>As this fundraising event was a pilot project for The Liberty Project and there was no specific webpage set up 
+            for the event or database management system for organizing donor information, there was no set methodology in place to follow. 
+            The team at Vanritto developed a workflow to develop the event webpage on The Liberty Project’s website for 
+            the purpose of increasing engagement with the public about the event and The Liberty Project, 
+            providing an ability for the public to donate and register for the event, and to develop a donor 
+            database system to allow proper management of donor information for future use. </p>
+        <img src="images/projectwork3.png" alt="Ride 4 Freedom Project Workflow">
+        <h5>The project was built on the foundation of four academic requirements:</h5></b>
+        <img src="images/requirements3.png" alt="Academic Requirements and Deliverables">
+
+</div>
+    </section>
+        <section>
+
+    
+              <div>
+                <h5>CREATING TEST DATA</h5>
+                  <p>Donorbox and Eventbrite are the third-party web applications used for the event for to allow the public to donate and register for the event.
+                    The applications collect information related to the donors which are accessed by the Client by downloading as CSV 
+                    spreadsheet. The Client forwarded empty Donorbox and Eventbrite CSV files as an example to the team to 
+                    build the database required for the project. The headers from the empty CSV files were loaded into the online data generation 
+                    site, Mockaroo where the data types for each attribute field were set, which allowed the team to export unique data for testing and 
+                    development.</p>
+                    <img src="images/mockaroo.png" alt="Mockaroo">
+                              
+                <h5>BUSINESS RULES & PRIMARY TABLES</h5>
+                  <p>The Client requested an Access database to enable storage and query of donor and registrant data and tracking, 
+                    engagement, and advertising. Once the test data was loaded into the database, four primary tables were 
+                    developed based on the  Client’s business rules: Donations, Donors, Transactions and Event Shirts.</p>
+                    <img src="images/table_develop.png" alt="Database table Development">
+                
+                <h5>ESTABLISHING THE DATABASE WORKFLOW</h5>
+                  <p>Data modelling helped illustrate the data flow inside the database. This process allowed the team to functionally 
+                    extract additional information and to streamline the development of interactive tools to improve the overall 
+                    database functionality.</p>
+                    <img src="images/er_diagram.jpg" alt="Work flow diagram">
+                
+                <h5>CUSTOMIZATION FOR MAXIMUM EFFICIENCY</h5>
+                  <p>The Graphic User Interface (GUI) was designed to streamline the functions of the database based on the data transfer process (ETL) workflow.
+                    The GUI uses custom programmed buttons to run and automate all steps of the ETL process for the client. The GUI was designed 
+                    using forms tools and buttons in the Access database and manipulating their events to run programmed functions using 
+                    Microsoft Visual Basic for Applications (VBA).</p>
+                    <img src="images/db_code.png" alt="Database VBA Code">		
+                
+                <h5>TECHNOLOGY USED</h5>
+                <div class="rowtech">
+                  <a href="https://www.microsoft.com/en-ca/microsoft-365/access" target="_blank"><img src="images/accesslogo.png" alt="Access Database" height="50"></a>
+                  <a href="https://www.mockaroo.com/" target="_blank"><img src="images/mockaroologo.png" alt="Mockaroo" height="50"></a>
+                  <a href="https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office" target="_blank"><img src="images/VBLogo.png" alt="VBA" height="50"></a>
+                  <a href="https://donorbox.org/" target="_blank"><img src="images/donorboxlogo.svg" alt="Donorbox" height="50"></a>
+                  <a href="https://www.eventbrite.ca/" target="_blank"><img src="images/eventbritelogo.png" alt="Eventbrite" height="50"></a>
+                </div>
+        </section>
+
+        <section>
+    
+          <div>
+              <h5>SQUARESPACE DESIGN TOOLS</h5>
+                <p>To build the Event Webpage on the Client’s website on Squarespace, the team utilized Squarespace’s built-in web design tools.
+                This included the Page Builder tools where the main webpage was generated using the Index tool and Add Section tool 
+                to develop 5 main sections. The Basic Tools such as Text, Button, Image, Spacer, Embed, and Code Block and Integration tool, 
+                Instagram, were then used to develop elements within each section. </p>
+              
+              <img src="images/basictools.png" alt="Squarespace Basic Web Design Tools">
+                  
+              <h5>CSS CUSTOMIZATION</h5>
+                <p>Next, the team worked to customize the design of the webpage to make things fit and work properly beyond the default Squarespace settings.
+                This was done using Custom CSS within the CSS Editor window on various elements such as setting the Web Map 
+                dimensions to span the width of the webpage to allow it to be a centre piece of the page, making a pop-up window to open the Web Map for 
+                users that may be experiencing technical difficulties, ensuring the size of the Donorbox widget and top banner sit the page properly, 
+                have the page display proper responsive design, as well as enhancements to the Buttons, Links.</p>
+            
+              <img src="images/csseditor3.PNG" alt="CSS Editor Window">
+                
+              <h5>VISUALIZATION</h5>
+                <p>The design of the webpage was developed to be user-friendly and intuitive.
+                It is designed into 5 clear sections with Donate and Register Button links integrated into each section to allow 
+                the user the easy ability to donate or register for the event wherever they are on the page.
+                Client branding such as font and colour was used within the design of the webpage along with 
+                complimentary colours, which was also used in the design of the web map.
+                The webpage was also styled to match the Client’s overall website look and feel so it blends in with 
+                the rest of their webpages. Additionally, the webpage was designed to be responsive for all devices and 
+                follow web accessibility guidelines.
+                </p>
+            
+              <img src="images/colours3.PNG" alt="Colour Blocks">
+            
+              <h5> THIRD-PARTY APPS</h5>
+                <p>Third-party applications were implemented into the Event webpage to build a fully functional digital platform that checked off all the boxes
+                  that the Client wanted and needed for this fundraising event. This included Donorbox for safe online donation collection, Eventbrite for event registration,  
+                  and My Virtual Mission for mileage tracking and live tracking of event registrants. </p>
+                <p> <b>My Virtual Mission was key to the event now being 100% online as a virtual event instead of in person.</b> Event registrants are emailed a link to join the Ride 4 Freedom 
+                  mission on My Virtual Mission once they register for the event through Eventbrite where they will then have access to the My Virtual Mission Portal. 
+                  On there, they can input distance they completed in their own neighbourhood using their rides tracked in Strava, which will then translate to distance on the ride.
+                  Additionally, the public will be able view live tracking of where registrants are on the route with a public map from My Virtual Mission.
+                  </p>
+           
+              <div class="rowlinks">
+             
+              <a class="links" href="https://donorbox.org/ride-for-freedom?default_interval=o" target="_blank">Donorbox |</a>
+          
+              <a class="links" href="https://www.eventbrite.ca/e/ride-for-liberty-virtual-challenge-fundraiser-tickets-155964242247" target="_blank">Eventbrite |</a>
+             
+          
+              <a class="links" href="https://www.myvirtualmission.com/external/map/118579" target="_blank">My Virtual Mission</a></p>
+              </div>
+    
+            
+            <h5>TECHNOLOGY USED</h5>
+            <div class="rowtech">
+              <a href="https://www.squarespace.com/" target="_blank"><img src="images/squarespacelogo.png" alt="Squarespace" height="50"></a>
+              <a href="https://donorbox.org/" target="_blank"><img src="images/donorboxlogo.svg" alt="Donorbox" height="50"></a>
+              <a href="https://www.eventbrite.ca/" target="_blank"><img src="images/eventbritelogo.png" alt="Eventbrite" height="50"></a>
+              <a href="https://www.myvirtualmission.com/" target="_blank"><img src="images/myvirtualmissionLogo.png" alt="My Virtual Mission" height="50"></a>
+              <a href="https://www.strava.com/" target="_blank"><img src="images/strava.PNG" alt="Strava" height="50"></a>
+              <a href="https://mapbox.com/" target="_blank"><img src="images/mapbox.PNG" alt="Mapbox" height="50"></a>
+            </div>
+
+
+   </section>
+
+
+    <section>
+				<div>
+					
+				<h5>CUSTOM MAP STYLE</h5>
+					<p>A custom map style was created using Mapbox Studio to fully customize the entire look of the Web Map 
+					to ensure it met the Client’s design needs. The team styled the map with a simplistic design in order to 
+					have the bike route be centre stage of the Web Map. Just like the webpage, The Liberty Project's colours 
+					along with complimentary colours were used so that the Web Map seamlessly integrated into the Client's website.
+					</p>
+					<p>The Web Map style was published as a URL and is referenced in the JavaScript 
+					file along with a personal Mapbox API Access Token for the base map style to be displayed on the Web Map. Map style rendering 
+					is additionally supported with a Mapbox JavaScript Library known as Mapbox GL JS.</p>
+
+					<img src="images/custombasemap.png" alt="Custom base map">
+					
+					
+				<h5>GEOJSON ROUTE AND STOPS</h5>
+					<p>The Client provided data layers for the bike route as KMZ files that needed to be converted to GeoJSON 
+					format. The KMZ files were uploaded to Google My Maps to enable the directions, stops, start and finish points 
+					to be displayed and  converted to KML. The KML files were then converted into a GeoJSON format that 
+					could be easily used with Mapbox through Mapbox’s own 
+					<a href="https://mapbox.github.io/togeojson/" target="_blank" class="links">online converter</a>. The final result 
+					derived from the clients KMZ files, were two GeoJSON files with directions of the route and all planned stops.</p>
+					
+					<img src="images/to_geojson.PNG" alt="Mapbox to GeoJSON tool">
+			
+
+				<h5>CREATING CHAPTERS</h5>
+					<p>Mapbox Scrollytelling works by implementing a series of Chapters along a path. To tell The Liberty Project fundraiser story, 
+					interactive chapters coincide with the start, stop, and finish points of the bike route. Each scheduled stops along the way 
+					has a chapter that explains information about the event, The Liberty Project, and Mozambique.
+					The scrollytelling Web Map makes use of the flyTo zoom feature, creating a flying motion when scrolling 
+					between locations on the map. The content for the chapters is stored in a GitHub repository and inserted into the 
+					JavaScript file for each chapter. Images are linked to the content in boxes in a similar way. The styling for the 
+					content is managed by the CSS file. </p>
+					<img src="images/mapChapters.png" alt="Web Map Chapters">
+
+					<h5>CUSTOMIZATION</h5>
+						<p>For the route to be displayed on the Web Map, JavaScript is used by adding the source information as a layer referencing 
+						the GeoJSON. The stops have been implemented in the same way as the route. To further enhance the design of the Web Map, 
+						custom icons and labels were produced. The icons were sourced from <a href="https://www.freepik.com/" target="_blank" class="links">Freepik</a> 
+						with edits made in Adobe illustrator. The icons were styled carefully by selecting colour choices to not only coincide with the Client's palette, 
+						but to also ensure high contrast design to draw the user’s eye to the stop locations.
+						Extra steps were taken to then display the customized icons and labels, in both HTML and Javascript 
+						in order to put the icons and labels on the map.  </p>
+            <img src="images/allicons.png" alt="All Icon">
+						<img src="images/customLayers.png" alt="Custom Layers">			
+						<img src="images/customLayerCode.png" alt="CustomCode"> 
+						
+					<h5>TECHNOLOGY USED</h5>
+					<div class="rowtech">
+           <div class="columntech"></div>
+						<a href="https://mapbox.com/" target="_blank"><img src="images/mapbox.PNG" alt="Mapbox" height="50"></a>
+						<a href="https://www.google.ca/maps/about/mymaps/" target="_blank"><img src="images/googlemapslogo.png" alt="Google MyMaps" height="50"></a>
+            <a href="https://www.adobe.com/ca/products/illustrator.html" target="_blank"><img src="images/IllustratorLogo.png" alt="Abobe Illustrator" height="50"></a>
+						<a href="https://github.com/" target="_blank"><img src="images/GitHub_Logo.png" alt="GitHub" height="50"></a>
+					</div>
+	
+          </div>
+
+        </section>
+  </div>
+</div>
+
+   
+
+      <!-- FOOTER-->
+      		<!-- FOOTER-->
+		<div>
+			<div class= "footer">
+			<footer>
+				<p><a href="https://www.instagram.com/THE_LIBERTYPROJECT/" target="_blank" class="fa fa-instagram w3-hover-opacity"></a><span> | </span><a href="index.html">Home </a><span> | </span><a href="PROJECT.html"><i class="fa fa-arrow-up"></i> Back To Top</a></p>
+				
+				<div>
+					<div class="logo1"><a href="https://www.instagram.com/THE_LIBERTYPROJECT/" target="_blank"><img src="images/lbplogoCircle.png" alt="LibertyProjectLogo"></a></div>
+					<div class="logo2"><img src="images/LogowhiteBG.png" alt="VanrittoLogo"></div>
+				</div>
+			</footer>
+  
+        
+  </body>
+</html>

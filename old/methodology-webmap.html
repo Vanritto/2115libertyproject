@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VANRITTO</title>
+        <!-- Link to the CSS Style sheet -->
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Link to the JavaScript sheet -->
+		<script src="vanritto.js"></script>
+    </head>
+    <body>
+    
+	<!--navbar-->
+		<div class="navbar">
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" id="home">HOME</a>
+				<a href="project.html">THE PROJECT</a>
+        			<div class="dropdown">
+					<button class="dropbtn">METHODOLOGY<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+                        			<a href="methodology.html"><i class="fas fa-cog fa-pulse"></i>OVERVIEW</a>
+						<a href="methodology-database.html"><i class='fas fa-database'></i> DATABASE DEVELOPMENT</a>
+						<a href="methodology-webpage.html"><i class="fa fa-globe" aria-hidden="true"></i> EVENT WEBPAGE</a>
+            					<a href="methodology-webmap.html"><i class="fa fa-map" aria-hidden="true"></i> WEB MAP</a>
+					</div>
+				</div> 
+				<div class="dropdown">
+					<button class="dropbtn">SOLUTIONS<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="website.html"><i class="fa fa-globe"></i>  THE WEBPAGE</a>
+						<a href="webmap.html"><i class='fas fa-map'></i>  THE WEB MAP</a>
+						<a href="database.html"><i class="fa fa-database" aria-hidden="true"></i> THE DATBASE</a>
+					</div>
+				</div> 
+				<a href="aboutus.html"><i class="fa fa-user"></i> ABOUT US</a>
+				<a href="contact.html"><i class="fa fa-envelope"></i> CONTACT</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</div>
+        <!--End Navbar-->
+
+		<!-- HEADER -->
+		<div class="header">
+			<img src="images/logobanner.png" alt="Logobanner" height="100%">
+		</div>
+		<div id="headertitle">
+			<span class="headertext">RIDE 4 FREEDOM <br> METHODOLOGY</span>
+		</div>
+    
+    	<!-- CONTENT -->
+		<div class="rowp">
+			<button onclick="document.location='methodology.html'">Overview</button>
+			<button onclick="document.location='methodology-database.html'">Database</button>
+			<button onclick="document.location='methodology-webpage.html'">Webpage</button>
+			<button onclick="document.location='methodology-webmap.html'">Web Map</button>	
+		</div>
+		
+		<h1>WEB MAP</h1>
+			<div class="content5">
+				
+						
+			<!--<h1>STORYTELLING WEB MAP</h1>-->
+			<div class="content5">
+				
+				<div>
+					
+				<h2>Custom Base Map Style</h2>
+					<p>A custom map style was created using Mapbox Studio to fully customize the entire look of the Web Map 
+					to ensure it met the Client’s design needs. The team styled the map with a simplistic design in order to 
+					have the bike route be centre stage of the Web Map. Just like the webpage, The Liberty Project's colours 
+					along with complimentary colours were used so that the Web Map seamlessly integrated into the Client's website.
+					</p>
+					<p>The Web Map style was published as a URL and is referenced in the JavaScript 
+					file along with a personal Mapbox API Access Token for the base map style to be displayed on the Web Map. Map style rendering 
+					is additionally supported with a Mapbox JavaScript Library known as Mapbox GL JS.</p>
+
+					<img src="images/custombasemap.png" alt="Custom base map">
+					
+					
+				<h2>GeoJSON Route Layer and Stops</h2>
+					<p>The Client provided data layers for the bike route as KMZ files that needed to be converted to GeoJSON 
+					format. The KMZ files were uploaded to Google My Maps to enable the directions, stops, start and finish points 
+					to be displayed and  converted to KML. The KML files were then converted into a GeoJSON format that 
+					could be easily used with Mapbox through Mapbox’s own 
+					<a href="https://mapbox.github.io/togeojson/" target="_blank" class="links">online converter</a>. The final result 
+					derived from the clients KMZ files, were two GeoJSON files with directions of the route and all planned stops.</p>
+					
+					<img src="images/to_geojson.PNG" alt="Mapbox to GeoJSON tool">
+					<img src="images/start.png" alt="Start Icon">
+					<img src="images/stop.png" alt="Stop Icon">
+					<img src="images/finish.png" alt="Finish Icon">
+
+				<h2>Creating Chapters</h2>
+					<p>Mapbox Scrollytelling works by implementing a series of Chapters along a path. To tell The Liberty Project fundraiser story, 
+					interactive chapters coincide with the start, stop, and finish points of the bike route. Each scheduled stops along the way 
+					has a chapter that explains information about the event, The Liberty Project, and Mozambique.
+					The scrollytelling Web Map makes use of the flyTo zoom feature, creating a flying motion when scrolling 
+					between locations on the map. The content for the chapters is stored in a GitHub repository and inserted into the 
+					JavaScript file for each chapter. Images are linked to the content in boxes in a similar way. The styling for the 
+					content is managed by the CSS file. </p>
+					<img src="images/mapChapters.png" alt="Web Map Chapters">
+
+					<h2>Customization</h2>
+						<p>For the route to be displayed on the Web Map, JavaScript is used by adding the source information as a layer referencing 
+						the GeoJSON. The stops have been implemented in the same way as the route. To further enhance the design of the Web Map, 
+						custom icons and labels were produced. The icons were sourced from <a href="https://www.freepik.com/" target="_blank" class="links">Freepik</a> 
+						with edits made in Adobe illustrator. The icons were styled carefully by selecting colour choices to not only coincide with the Client's palette, 
+						but to also ensure high contrast design to draw the user’s eye to the stop locations.
+						Extra steps were taken to then display the customized icons and labels, in both HTML and Javascript 
+						in order to put the icons and labels on the map.  </p>
+						<img src="images/customLayers.png" alt="Custom Layers">			
+						<img src="images/customLayerCode.png" alt="CustomCode"> 
+						
+					<h1>Technology Used</h1>
+					<div class="rowp">
+						<a href="https://mapbox.com/" target="_blank"><img src="images/mapbox.PNG" alt="Mapbox" height="70"></a>
+						<a href="https://www.google.ca/maps/about/mymaps/" target="_blank"><img src="images/googlemapslogo.png" alt="Google MyMaps" height="70"></a>
+						<a href="https://www.adobe.com/ca/products/illustrator.html" target="_blank"><img src="images/IllustratorLogo.png" alt="Abobe Illustrator" height="70"></a>
+						<a href="https://github.com/" target="_blank"><img src="images/GitHub_Logo.png" alt="GitHub" height="70"></a>
+					
+					</div>
+
+				</div>
+			</div>
+			
+
+		
+			
+				</div>
+			</div>
+
+		<!-- FOOTER-->
+		<div >
+			<div class= "footer">
+			<footer>
+				<p><a href="https://www.instagram.com/THE_LIBERTYPROJECT/" target="_blank" class="fa fa-instagram w3-hover-opacity"></a><span> | </span><a href="index.html">Home </a><span> | </span><a href="PROJECT.html"><i class="fa fa-arrow-up"></i> Back To Top</a></p>
+				
+				<div >
+					<div class="logo1"><a href="https://www.instagram.com/THE_LIBERTYPROJECT/" target="_blank"><img src="images/lbplogoCircle.png" alt="LibertyProjectLogo"></a></div>
+					<div class="logo2"><img src="images/LogowhiteBG.png" alt="VanrittoLogo"></div>
+				</div>
+			</footer>
+			</div>
+		</div>
+	</body>
+
+</html>

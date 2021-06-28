@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VANRITTO</title>
+        <!-- Link to the CSS Style sheet -->
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Link to the JavaScript sheet -->
+		<script src="vanritto.js"></script>
+    </head>
+    <body>
+		
+    
+	<!--navbar-->
+		<div class="navbar">
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" id="home">HOME</a>
+				<a href="project.html">THE PROJECT</a>
+        			<div class="dropdown">
+					<button class="dropbtn">METHODOLOGY<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+                        			<a href="methodology.html"><i class="fas fa-cog fa-pulse"></i>OVERVIEW</a>
+						<a href="methodology-database.html"><i class='fas fa-database'></i> DATABASE DEVELOPMENT</a>
+						<a href="methodology-webpage.html"><i class="fa fa-globe" aria-hidden="true"></i> EVENT WEBPAGE</a>
+            					<a href="methodology-webmap.html"><i class="fa fa-map" aria-hidden="true"></i> WEB MAP</a>
+					</div>
+				</div> 
+				<div class="dropdown">
+					<button class="dropbtn">SOLUTIONS<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="website.html"><i class="fa fa-globe"></i>  THE WEBPAGE</a>
+						<a href="webmap.html"><i class='fas fa-map'></i>  THE WEB MAP</a>
+						<a href="database.html"><i class="fa fa-database" aria-hidden="true"></i> THE DATBASE</a>
+					</div>
+				</div> 
+				<a href="aboutus.html"><i class="fa fa-user"></i> ABOUT US</a>
+				<a href="contact.html"><i class="fa fa-envelope"></i> CONTACT</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</div>
+        <!--End Navbar-->
+
+		<!-- HEADER -->
+		<div class="header">
+			<img src="images/logobanner.png" alt="Logobanner" height="100%">
+		</div>
+		<div id="headertitle">
+			<span class="headertext">RIDE 4 FREEDOM <br> METHODOLOGY</span>
+		</div>
+    
+    	<!-- CONTENT -->
+		<div class="rowp">
+			<button onclick="document.location='methodology.html'">Overview</button>
+			<button onclick="document.location='methodology-database.html'">Database</button>
+			<button onclick="document.location='methodology-webpage.html'">Webpage</button>
+			<button onclick="document.location='methodology-webmap.html'">Web Map</button>	
+		</div>
+		
+		<h1> WEB PAGE</h1>
+			<div class="content5">
+			<!--<h1>EVENT WEBPAGE</h1>-->
+			<!-- <div class="content5"> -->
+				
+			<div>
+					<h2>Squarespace Web Design Tools</h2>
+						<p>To build the Event Webpage on the Client’s website on Squarespace, the team utilized Squarespace’s built-in web design tools.
+						This included the Page Builder tools where the main webpage was generated using the Index tool and Add Section tool 
+						to develop 5 main sections. The Basic Tools such as Text, Button, Image, Spacer, Embed, and Code Block and Integration tool, 
+						Instagram, were then used to develop elements within each section. </p>
+					
+					<img src="images/basictools.png" alt="Squarespace Basic Web Design Tools">
+							
+					<h2>CSS Customization</h2>
+						<p>Next, the team worked to customize the design of the webpage to make things fit and work properly beyond the default Squarespace settings.
+						This was done using Custom CSS within the CSS Editor window on various elements such as setting the Web Map 
+						dimensions to span the width of the webpage to allow it to be a centre piece of the page, making a pop-up window to open the Web Map for 
+						users that may be experiencing technical difficulties, ensuring the size of the Donorbox widget and top banner sit the page properly, 
+						have the page display proper responsive design, as well as enhancements to the Buttons, Links.</p>
+				
+					<img src="images/csseditor3.PNG" alt="CSS Editor Window">
+						
+					<h2>Visualization</h2>
+						<p>The design of the webpage was developed to be user-friendly and intuitive.
+						It is designed into 5 clear sections with Donate and Register Button links integrated into each section to allow 
+						the user the easy ability to donate or register for the event wherever they are on the page.
+						Client branding such as font and colour was used within the design of the webpage along with 
+						complimentary colours, which was also used in the design of the web map.
+						The webpage was also styled to match the Client’s overall website look and feel so it blends in with 
+						the rest of their webpages. Additionally, the webpage was designed to be responsive for all devices and 
+						follow web accessibility guidelines.
+						</p>
+				
+					<img src="images/colours3.PNG" alt="Colour Blocks">
+				
+					<h2>Third-Party Applications</h2>
+						<p>Third-party applications were implemented into the Event webpage to build a fully functional digital platform that checked off all the boxes
+							that the Client wanted and needed for this fundraising event. This included Donorbox for safe online donation collection, Eventbrite for event registration,  
+							and My Virtual Mission for mileage tracking and live tracking of event registrants. </p>
+						<p> <b>My Virtual Mission was key to the event now being 100% online as a virtual event instead of in person.</b> Event registrants are emailed a link to join the Ride 4 Freedom 
+							mission on My Virtual Mission once they register for the event through Eventbrite where they will then have access to the My Virtual Mission Portal. 
+							On there, they can input distance they completed in their own neighbourhood using their rides tracked in Strava, which will then translate to distance on the ride.
+							Additionally, the public will be able view live tracking of where registrants are on the route with a public map from My Virtual Mission.
+							</p>
+					<!--add images for links -->
+					<p><a href="https://donorbox.org/ride-for-freedom?default_interval=o">Donorbox</a></p>
+					<p><a href="https://www.eventbrite.ca/e/ride-for-liberty-virtual-challenge-fundraiser-tickets-155964242247">Eventbrite</a></p>
+					<p><a href="https://www.myvirtualmission.com/external/map/118579">My Virtual Mission</a></p>
+
+
+				
+				<h1>Technology Used</h1>
+				<div class="rowp">
+					<a href="https://www.squarespace.com/" target="_blank"><img src="images/squarespacelogo.png" alt="Squarespace" height="70"></a>
+					<a href="https://donorbox.org/" target="_blank"><img src="images/donorboxlogo.svg" alt="Donorbox" height="70"></a>
+					<a href="https://www.eventbrite.ca/" target="_blank"><img src="images/eventbritelogo.png" alt="Eventbrite" height="70"></a>
+					<a href="https://www.myvirtualmission.com/" target="_blank"><img src="images/myvirtualmissionLogo.png" alt="My Virtual Mission" height="70"></a>
+					<a href="https://www.strava.com/" target="_blank"><img src="images/strava.PNG" alt="Strava" height="70"></a>
+					<a href="https://mapbox.com/" target="_blank"><img src="images/mapbox.PNG" alt="Mapbox" height="70"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER-->
+		<div>
+			<div class= "footer">
+			<footer>
+				<p><a href="https://www.instagram.com/THE_LIBERTYPROJECT/" target="_blank" class="fa fa-instagram w3-hover-opacity"></a><span> | </span><a href="index.html">Home </a><span> | </span><a href="PROJECT.html"><i class="fa fa-arrow-up"></i> Back To Top</a></p>
+				
+				<div>
+					<div class="logo1"><a href="https://www.instagram.com/THE_LIBERTYPROJECT/" target="_blank"><img src="images/lbplogoCircle.png" alt="LibertyProjectLogo"></a></div>
+					<div class="logo2"><img src="images/LogowhiteBG.png" alt="VanrittoLogo"></div>
+				</div>
+			</footer>
+			</div>
+		</div>
+	</body>
+
+</html>

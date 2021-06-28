@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VANRITTO</title>
+    <!-- Link to the CSS Style sheet -->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Link to the JavaScript sheet -->
+    <script src="vanritto.js"></script>
+  </head>
+  <body>
+    <!--navbar-->
+    <div class="navbar">
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" id="home">HOME</a>
+        <a href="project.html">THE PROJECT</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            METHODOLOGY<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="methodology.html"
+              ><i class="fas fa-cog fa-pulse"></i>OVERVIEW</a
+            >
+            <a href="methodology-database.html"
+              ><i class="fas fa-database"></i> DATABASE DEVELOPMENT</a
+            >
+            <a href="methodology-webpage.html"
+              ><i class="fa fa-globe" aria-hidden="true"></i> EVENT WEBPAGE</a
+            >
+            <a href="methodology-webmap.html"
+              ><i class="fa fa-map" aria-hidden="true"></i> WEB MAP</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            SOLUTIONS<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="website.html"><i class="fa fa-globe"></i> THE WEBPAGE</a>
+            <a href="webmap.html"><i class="fas fa-map"></i> THE WEB MAP</a>
+            <a href="database.html"
+              ><i class="fa fa-database" aria-hidden="true"></i> THE DATBASE</a
+            >
+          </div>
+        </div>
+        <a href="aboutus.html"><i class="fa fa-user"></i> ABOUT US</a>
+        <a href="contact.html"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!--End Navbar-->
+
+		<!-- HEADER -->
+		<div class="header">
+			<img src="images/logobanner.png" alt="Logobanner" height="100%">
+		</div>
+		<div id="headertitle">
+			<span class="headertext">RIDE 4 FREEDOM <br> METHODOLOGY</span>
+		</div>
+    
+    	<!-- CONTENT -->
+		<div class="rowp">
+			<button onclick="document.location='methodology.html'">Overview</button>
+			<button onclick="document.location='methodology-database.html'">Database</button>
+			<button onclick="document.location='methodology-webpage.html'">Webpage</button>
+			<button onclick="document.location='methodology-webmap.html'">Web Map</button>	
+		</div>
+		
+		
+			<h1>DATABASE</h1>
+			<div class="content5">
+				
+			<!--<h1>DATABASE DEVELOPMENT</h1>-->
+			<div class="content5">
+				<div>
+					<h2>Creating Test Data</h2>
+						<p>Donorbox and Eventbrite are the third-party web applications used for the event for to allow the public to donate and register for the event.
+							The applications collect information related to the donors which are accessed by the Client by downloading as CSV 
+							spreadsheet. The Client forwarded empty Donorbox and Eventbrite CSV files as an example to the team to 
+							build the database required for the project. The headers from the empty CSV files were loaded into the online data generation 
+							site, Mockaroo where the data types for each attribute field were set, which allowed the team to export unique data for testing and 
+							development.</p>
+							<img src="images/mockaroo.png" alt="Mockaroo">
+												
+					<h2>Business Rules & Primary Tables</h2>
+						<p>The Client requested an Access database to enable storage and query of donor and registrant data and tracking, 
+							engagement, and advertising. Once the test data was loaded into the database, four primary tables were 
+							developed based on the  Client’s business rules: Donations, Donors, Transactions and Event Shirts.</p>
+							<img src="images/table_develop.png" alt="Database table Development">
+					
+					<h2>Establishing the Database Workflow</h2>
+						<p>Data modelling helped illustrate the data flow inside the database. This process allowed the team to functionally 
+							extract additional information and to streamline the development of interactive tools to improve the overall 
+							database functionality.</p>
+							<img src="images/er_diagram.jpg" alt="Work flow diagram">
+					
+					<h2>Customization for Maximum Efficiency</h2>
+						<p>The Graphic User Interface (GUI) was designed to streamline the functions of the database based on the data transfer process (ETL) workflow.
+							The GUI uses custom programmed buttons to run and automate all steps of the ETL process for the client. The GUI was designed 
+							using forms tools and buttons in the Access database and manipulating their events to run programmed functions using 
+							Microsoft Visual Basic for Applications (VBA).</p>
+							<img src="images/db_code.png" alt="Database VBA Code">		
+					
+					<h1>Technology Used</h1>
+					<div class="rowp">
+						<a href="https://www.microsoft.com/en-ca/microsoft-365/access" target="_blank"><img src="images/accesslogo.png" alt="Access Database" height="70"></a>
+						<a href="https://www.mockaroo.com/" target="_blank"><img src="images/mockaroologo.png" alt="Mockaroo" height="70"></a>
+						<a href="https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office" target="_blank"><img src="images/VBLogo.png" alt="VBA" height="70"></a>
+						<a href="https://donorbox.org/" target="_blank"><img src="images/donorboxlogo.svg" alt="Donorbox" height="70"></a>
+						<a href="https://www.eventbrite.ca/" target="_blank"><img src="images/eventbritelogo.png" alt="Eventbrite" height="70"></a>
+					</div>
+				</div>
+			</div>
+   
+    <!-- FOOTER-->
+    <div>
+      <div class="footer">
+        <footer>
+          <p>
+            <a
+              href="https://www.instagram.com/THE_LIBERTYPROJECT/"
+              target="_blank"
+              class="fa fa-instagram w3-hover-opacity"
+            ></a
+            ><span> | </span><a href="index.html">Home </a><span> | </span
+            ><a href="PROJECT.html"
+              ><i class="fa fa-arrow-up"></i> Back To Top</a
+            >
+          </p>
+
+          <div>
+            <div class="logo1">
+              <a
+                href="https://www.instagram.com/THE_LIBERTYPROJECT/"
+                target="_blank"
+                ><img src="images/lbplogoCircle.png" alt="LibertyProjectLogo"
+              /></a>
+            </div>
+            <div class="logo2">
+              <img src="images/LogowhiteBG.png" alt="VanrittoLogo" />
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
