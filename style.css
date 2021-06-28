@@ -1016,39 +1016,27 @@ h1 {
 }
 
 .content5 img {
-  float: left;
-  padding-right: 3%;
   padding-top: 0;
-  width: 50%;
+  width: 80%;
   height: auto;
-}
+  opacity: 0.8;}
 
-/* .content5 h2 {
-  text-align: left;
-  font-size: 20px;
-  /* padding-left: 5%; 
-}*/
 
 .content5 h1 {
   font-family: sans-serif;
   text-align: center;
   /* width: 100%; */
   /* padding: 2%; */
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   margin-top: 0%;
   font-size: 18px;
 }
 .content5 h4 {
- 
   text-align: left;
 }
 .content5 p {
-  /* margin-left: 3%; */
-  padding-right: 1%;
-  /* height: auto; */
-  /* font-size: larg; */
-  line-height: 1.6;
-  padding-top: 1%;
+  line-height: 1.5;
+  padding-top: 2%;
 }
 @media screen and (max-width: 900px) {
   .content5 h1 {
@@ -1060,6 +1048,10 @@ h1 {
     margin-bottom: 10%;
   }
 }
+
+
+
+/** tech logos **/
 .rowtech {
   /* justify-content: center; */
   display: inline-block;
