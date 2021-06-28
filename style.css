@@ -5,6 +5,9 @@
 input:hover{
   font-size: larger;
 } */
+
+/** TABS **/
+/** with refernce to https://codepen.io/woranov/pen/NRqLWK/ and https://codepen.io/inupurnomo/pen/MWWRmQr **/
 .tabs {
   left: 50%;
   transform: translateX(-50%);
@@ -359,6 +362,38 @@ input:hover{
   }
 }
 
+@media (max-width: 1000px) {
+  .tabs ul li label {
+    /* raghad */
+    /* white-space: initial; */
+    white-space: nowrap;
+  }
+  /* raghad */
+  .tabs ul li{
+    padding: 0.1%; 
+    width: 100%;
+  }
+  /* raghad */
+  .tabs ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+ 
+  }
+  /* raghad */
+  .indicator{
+    display: none;
+  }
+   .tabs ul li label br {
+    /* display: initial; */
+    /* raghad */
+    display: none;
+  }
+  .tabs ul li label svg {
+    height: 1.5em;
+  }
+}
 /* START */
 
 body,
@@ -757,6 +792,7 @@ h1 {
 
 .content {
   padding: 20px;
+  
 }
 
 .row {
@@ -778,12 +814,19 @@ h1 {
   overflow: hidden;
 }
 
-.column h3,
-h4 {
+
+.column h3 {
   color: #58595c;
   font-size: 1.1vw;
+  font-weight: bold;
 }
 
+.column h4 {
+  color: #58595c;
+  font-size: 1.1vw;
+  font-weight: normal;
+
+}
 .overlay {
   position: absolute;
   bottom: 100%;
@@ -802,7 +845,7 @@ h4 {
   padding-right: 10%;
   padding-bottom: 1%;
   padding-left: 10%;
-  font-family: "arial", sans-serif;
+  font-family: 'Ubuntu', sans-serif; 
   font-size: medium;
   text-align: left;
   overflow: auto;
@@ -810,9 +853,9 @@ h4 {
   margin-top: 6%;
   line-height: 1.8;
 }
-.overlay p:hover {
+/* .overlay p:hover {
   font-size: large;
-}
+} */
 .aboutusIcon {
   /*display: inline-grid;*/
   margin-right: 4%;
